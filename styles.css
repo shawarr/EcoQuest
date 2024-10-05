@@ -1,3 +1,5 @@
+   
+    
     .wrapper {
         background-image: url('images/background.jpg');
         background-size: cover; /* Ensure the background image covers the entire area */
@@ -89,3 +91,13 @@
     .button-container {
         margin-bottom: 5em;
     }
+
+    .sdg-container{
+        margin-top:3em;
+        margin-left:5em;
+    }
+
+   
+   
+   
+   
