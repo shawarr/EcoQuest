@@ -216,14 +216,14 @@ document.getElementById('prevBtn').addEventListener('click', () => {
     }
 });
 
-// Pagination: Click on circle items to jump to the respective question
+
 circleItems.forEach((item, index) => {
     item.addEventListener('click', () => {
         currentQuestion = index;
         showQuestion(currentQuestion);
     });
 });
-let timerDuration = 2; // 2 minutes 30 seconds in seconds
+let timerDuration = 120; 
 let timerDisplay = document.getElementById('timer');
 const popupModal = document.getElementById('popupModal');
 const closeButton = document.getElementById('closeButton');
@@ -231,7 +231,7 @@ const resetButton = document.getElementById('resetButton');
 
 // Function to reset the quiz
 function resetQuiz() {
-    timerDuration = 2; // Reset to 2 minutes 30 seconds
+    timerDuration = 120; // Reset to 2 minutes 30 seconds
     currentQuestion = 0; // Reset to the first question
     showQuestion(currentQuestion); // Show the first question
     timerDisplay.textContent = "00:02:30 Minutes"; // Reset timer display
