@@ -1,0 +1,233 @@
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+
+
+.timer {
+    margin-left:2em;
+    font-size: 1.2em;
+    color: red;
+    font-weight: 500;
+}
+
+.submit-button {
+    padding: 0.5em 1em;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius:0.5em;;
+    margin-right:1.5em;
+}
+.circle-paragraph-container {
+    display: flex;
+    align-items: center; /* Aligns both elements vertically in the center */
+}
+
+.circle-container {
+    position: relative;
+    display: inline-block;
+    line-height: 0; /* Ensures no extra space around the image */
+}
+
+.circle {
+    display: block;
+    width: 50px;
+    margin: 1em;
+}
+
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.circle-description {
+    margin-left: 1em;
+    font-size: 16px;
+    color: black;
+    line-height: 1.5; /* You can tweak this if the text seems misaligned */
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 1em;
+    margin:2em;
+
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 0.5em); /* Two columns */
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.option input[type="radio"] {
+    display: none; /* Hide default radio button */
+}
+
+.option:hover {
+    background-color: #e0f7f1; /* Hover effect */
+}
+
+.option input[type="radio"]:checked + .option-text {
+    background-color: #66c2a4; /* Highlight when selected */
+    color: white;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+.option-text {
+    flex: 1;
+    font-size: 16px;
+    margin-right: 1em;
+}
+
+.option-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.circle-pagination {
+    display: flex;
+    gap: 1em; /* Spacing between circles */
+}
+
+.circle-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: red; /* Default background color */
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle-item:hover {
+    background-color: #ff6b6b; /* Hover color */
+}
+
+.circle-item.active {
+    background-color: darkgreen; /* Highlight for active/current question */
+}
+.nav-buttons {
+    display: inline-flex;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;  /* Stack pagination and buttons vertically */
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;  /* Make sure it takes the full width */
+}
+
+.pagination {
+    margin-bottom: 1.5em;  /* Space between pagination and buttons */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  /* Ensure buttons take the full width */
+    padding: 0 2em;  /* Optional padding for extra spacing */
+}
+
+#prevBtn, #nextBtn {
+    padding: 0.5em 1em;
+    background-color: darkgreen; /* Green background for both buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.5em;
+    width: 120px;  /* Ensure both buttons are the same width */
+}
+
+#prevBtn {
+    background-color: red;  /* Red for the Prev button */
+}
+
+#nextBtn {
+    background-color: darkgreen;  /* Green for the Next button */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#resetButton {
+    padding: 0.5em 1em;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
