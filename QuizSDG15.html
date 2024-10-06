@@ -5,7 +5,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoQuest Quiz Landing Page</title>
+    <title>SDG 15 - Life On Land</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -15,15 +15,6 @@
 </head>
      
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vocabulary Revision - Jss1</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
         <div class="wrapper container-fluid d-flex flex-column align-items-center">
             <div class="logo text-center">
                 <a class="title" href="index.html">
@@ -65,8 +56,8 @@
         </nav>
     
         <div class="header-container">
-            <h2 style="color:darkgreen">SDG 14 - Life on Land</h2>
-            <div class="timer" id="timer">00:02:30 Minutes</div>
+            <h2 style="color:darkgreen">SDG 15 - Life On Land</h2>
+            <div class="timer" id="timer">00:02:00 Minutes</div>
             <button type="submit" class="submit-button">Submit</button>
         </div>
         <hr>
@@ -82,24 +73,24 @@
                     <img class="circle" src="images/greencircle.png" alt="">
                     <span class="circle-text">1</span>
                 </div>
-                <p class="circle-description">Question 1: What is the primary focus of SDG 15?</p>
+                <p class="circle-description">Question 1: Which of the following is a key contributor to deforestation?</p>
             </div>
             <div class="options-container">
                 <label class="option">
                     <input type="radio" name="q1" value="A">
-                    <span class="option-text">A. Life below water</span>
+                    <span class="option-text">A. Urbanization</span>
                 </label>
                 <label class="option">
                     <input type="radio" name="q1" value="B">
-                    <span class="option-text">B. Life on land</span>
+                    <span class="option-text">B. Logging</span>
                 </label>
                 <label class="option">
                     <input type="radio" name="q1" value="C">
-                    <span class="option-text">C. Climate action</span>
+                    <span class="option-text">C. Agricultural expansion</span>
                 </label>
                 <label class="option">
                     <input type="radio" name="q1" value="D">
-                    <span class="option-text">D. Affordable and clean energy</span>
+                    <span class="option-text">D. All of the above</span>
                 </label>
             </div>
         </div>
@@ -111,24 +102,25 @@
                     <img class="circle" src="images/greencircle.png" alt="">
                     <span class="circle-text">2</span>
                 </div>
-                <p class="circle-description">Question 2: How can we contribute to SDG 15?</p>
+                <p class="circle-description">Question 2: Which of the following species are most at risk of extinction due to
+                    deforestation?</p>
             </div>
             <div class="options-container">
                 <label class="option">
                     <input type="radio" name="q2" value="A">
-                    <span class="option-text">A. Reducing deforestation</span>
+                    <span class="option-text">A. Large mammals</span>
                 </label>
                 <label class="option">
                     <input type="radio" name="q2" value="B">
-                    <span class="option-text">B. Increasing deforestation</span>
+                    <span class="option-text">B. Amphibians</span>
                 </label>
                 <label class="option">
                     <input type="radio" name="q2" value="C">
-                    <span class="option-text">C. Building more cities</span>
+                    <span class="option-text">C. Birds</span>
                 </label>
                 <label class="option">
                     <input type="radio" name="q2" value="D">
-                    <span class="option-text">D. Polluting rivers</span>
+                    <span class="option-text">D. Insects</span>
                 </label>
             </div>
         </div>
@@ -232,7 +224,7 @@ circleItems.forEach((item, index) => {
         showQuestion(currentQuestion);
     });
 });
-let timerDuration = 2; // 2 minutes 30 seconds in seconds
+let timerDuration = 120; // 2 minutes 30 seconds in seconds
 let timerDisplay = document.getElementById('timer');
 const popupModal = document.getElementById('popupModal');
 const closeButton = document.getElementById('closeButton');
@@ -240,7 +232,7 @@ const resetButton = document.getElementById('resetButton');
 
 // Function to reset the quiz
 function resetQuiz() {
-    timerDuration = 2; // Reset to 2 minutes 30 seconds
+    timerDuration = 120; // Reset to 2 minutes 30 seconds
     currentQuestion = 0; // Reset to the first question
     showQuestion(currentQuestion); // Show the first question
     timerDisplay.textContent = "00:02:30 Minutes"; // Reset timer display

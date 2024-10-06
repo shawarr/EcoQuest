@@ -1,0 +1,124 @@
+#sdg7-carousel {
+    margin: 2em auto; /* Center the carousel */
+    max-width: 800px; /* Set a maximum width */
+   
+}
+#sdg14-carousel {
+    margin: 6em auto; /* Center the carousel */
+    max-width: 800px; /* Set a maximum width */
+   
+}
+#sdg15-carousel {
+    margin: 6em auto; /* Center the carousel */
+    max-width: 800px; /* Set a maximum width */
+   
+}
+.carousel-slide2 {
+    padding: 20px; /* Add padding around the content */
+    text-align: center; /* Center align the text */
+    background-color: #088cd828; /* Light background for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.carousel-slid2 h3 {
+    font-size: 24px; /* Larger font size for headings */
+    color: #333; /* Dark color for the text */
+}
+
+.carousel-slide2 p {
+    font-size: 16px; /* Standard font size for paragraphs */
+    color: #666; /* Lighter color for the paragraph text */
+}
+
+@media (max-width: 768px) {
+    .carousels-container {
+        flex-direction: column; /* Stack carousels */
+        padding: 1em;
+    }
+
+    #sdg7-carousel, #sdg14-carousel, #sdg15-carousel {
+        margin: 1.5em 0; /* Adjust margins for stacked carousels */
+    }
+}
+
+/* Style for all carousels */
+.slick-slider {
+    max-width: 100%; /* Ensure the carousels take up full width */
+}
+
+/* Style for each carousel individually */
+#sdg7-carousel, #sdg14-carousel, #sdg15-carousel {
+    margin: 2em auto; /* Center the carousel */
+    padding: 1em; /* Add padding around the carousels */
+    max-width: 800px; /* Set a max width for wider screens */
+    flex: 1; /* Allow flex grow in the container */
+}
+
+/* For individual carousel slides */
+.carousel-slide2 {
+    padding: 20px; /* Add padding around the content */
+    text-align: center; /* Center align the text */
+    background-color: #0a99f850; /* Light background for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 1.5em; /* Add margin between slides */
+}
+
+/* Styling for headings inside carousels */
+.carousel-slide2 h2 {
+    font-size: 24px; /* Larger font size for headings */
+    color: #333; /* Dark color for the text */
+}
+
+/* Styling for paragraphs inside carousels */
+.carousel-slide2 p {
+    font-size: 16px; /* Standard font size for paragraphs */
+    color: #666; /* Lighter color for the paragraph text */
+}
+
+/* Flex container for larger screens */
+.carousels-container {
+    display: flex;
+    justify-content: space-between; /* Adds space between carousels */
+    gap: 1em; /* Creates spacing between carousels */
+}
+
+.slick-carousel3 {
+
+    margin: 0 auto;  /* Center the carousel */
+}
+
+.slick-carousel3 img {
+    width: 100%;
+    border-radius: 10px;  /* Optional: Add rounded corners to images */
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #007bff;  /* Change the color of arrows */
+}
+
+.slick-dots li button:before {
+    color: #007bff;  /* Change the color of dots */
+}
+
+.slick-carousel3{
+    margin:2em;
+}
+
+ .chart-container {
+    padding:1em;
+    margin:auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        canvas {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
