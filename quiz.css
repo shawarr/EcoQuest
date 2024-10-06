@@ -29,13 +29,13 @@
 }
 .circle-paragraph-container {
     display: flex;
-    align-items: center; /* Aligns both elements vertically in the center */
+    align-items: center; 
 }
 
 .circle-container {
     position: relative;
     display: inline-block;
-    line-height: 0; /* Ensures no extra space around the image */
+    line-height: 0; 
 }
 
 .circle {
@@ -58,7 +58,7 @@
    margin:2em;
     font-size: 16px;
     color: black;
-    line-height: 1.5; /* You can tweak this if the text seems misaligned */
+    line-height: 1.5; 
 }
 
 .options-container {
@@ -74,7 +74,7 @@
 .option {
     display: flex;
     align-items: center;
-    width: calc(50% - 0.5em); /* Two columns */
+    width: calc(50% - 0.5em); 
     background-color: white;
     border: 1px solid lightgray;
     padding: 1em;
@@ -85,15 +85,15 @@
 }
 
 .option input[type="radio"] {
-    display: none; /* Hide default radio button */
+    display: none; 
 }
 
 .option:hover {
-    background-color: #e0f7f1; /* Hover effect */
+    background-color: #e0f7f1; 
 }
 
 .option input[type="radio"]:checked + .option-text {
-    background-color: #66c2a4; /* Highlight when selected */
+    background-color: #66c2a4; 
     color: white;
     border-radius: 10px;
     padding: 0.5em;
@@ -119,7 +119,7 @@
 
 .circle-pagination {
     display: flex;
-    gap: 1em; /* Spacing between circles */
+    gap: 1em; 
 }
 
 .circle-item {
@@ -128,7 +128,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: red; /* Default background color */
+    background-color: red; 
     color: white;
     border-radius: 50%;
     font-weight: bold;
@@ -137,11 +137,11 @@
 }
 
 .circle-item:hover {
-    background-color: #ff6b6b; /* Hover color */
+    background-color: #ff6b6b;
 }
 
 .circle-item.active {
-    background-color: darkgreen; /* Highlight for active/current question */
+    background-color: darkgreen;
 }
 .nav-buttons {
     display: inline-flex;
@@ -151,62 +151,61 @@
 
 .nav-container {
     display: flex;
-    flex-direction: column;  /* Stack pagination and buttons vertically */
+    flex-direction: column; 
     align-items: center;
     margin-top: 2em;
-    width: 100%;  /* Make sure it takes the full width */
+    width: 100%; 
 }
 
 .pagination {
-    margin-bottom: 1.5em;  /* Space between pagination and buttons */
+    margin-bottom: 1.5em;  
 }
 
 .nav-buttons {
     display: flex;
     justify-content: space-between;
-    width: 100%;  /* Ensure buttons take the full width */
-    padding: 0 2em;  /* Optional padding for extra spacing */
+    width: 100%; 
+    padding: 0 2em; 
 }
 
 #prevBtn, #nextBtn {
     padding: 0.5em 1em;
-    background-color: darkgreen; /* Green background for both buttons */
+    background-color: darkgreen; 
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1em;
     border-radius: 0.5em;
-    width: 120px;  /* Ensure both buttons are the same width */
+    width: 120px;  
 }
 
 #prevBtn {
-    background-color: red;  /* Red for the Prev button */
+    background-color: red;  
 }
 
 #nextBtn {
-    background-color: darkgreen;  /* Green for the Next button */
+    background-color: darkgreen;  
 }
 
-/* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     background-color: white;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
 }
 
 .close-button {

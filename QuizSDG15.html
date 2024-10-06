@@ -20,36 +20,31 @@
                 <a class="title" href="index.html">
                     <h1 class="ecoquest-title">EcoQuest</h1>
                 </a>
-                <p style="font-size:25px; color:white">Collect. Learn. Sustain</p>
+                <p style="font-size:25px; color:darkred">Collect. Learn. Sustain</p>
             </div>
         </div>
     
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding:0.75em;">
-            <!-- Logo Section -->
+          
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Logo" style="height: 70px; width:auto;">
+                <img src="images/logo3.png" alt="Logo" style="height: 70px; width:auto;">
             </a>
     
-            <!-- Toggler Button for Small Screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <!-- Navbar Links (Collapsible) -->
+           
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link " href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Home
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Subitem 1</a></li>
-                            <li><a class="dropdown-item" href="#">Subitem 2</a></li>
-                            <li><a class="dropdown-item" href="#">Subitem 3</a></li>
-                        </ul>
+                       
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="index.html#portal">Portal</a>
                     </li>
                 </ul>
             </div>
@@ -58,15 +53,17 @@
         <div class="header-container">
             <h2 style="color:darkgreen">SDG 15 - Life On Land</h2>
             <div class="timer" id="timer">00:02:00 Minutes</div>
-            <button type="submit" class="submit-button">Submit</button>
+            <a href="index.html">
+                <button type="submit" class="submit-button">Submit</button>
+                </a>
         </div>
         <hr>
             
            
        
-    <!-- Question Container (only one question visible at a time) -->
+  
     <div class="question-container">
-        <!-- Question 1 -->
+       
         <div class="question active">
             <div class="circle-paragraph-container">
                 <div class="circle-container">
@@ -95,7 +92,7 @@
             </div>
         </div>
 
-        <!-- Question 2 -->
+     
         <div class="question">
             <div class="circle-paragraph-container">
                 <div class="circle-container">
@@ -125,7 +122,7 @@
             </div>
         </div>
 
-        <!-- Question 3 -->
+   
         <div class="question">
             <div class="circle-paragraph-container">
                 <div class="circle-container">
@@ -169,40 +166,39 @@
             <button id="nextBtn">Next</button>
         </div>
     </div>
-    <!-- Load jQuery and Bootstrap JS -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
  
-// Question navigation logic
+
 let currentQuestion = 0;
 const questions = document.querySelectorAll('.question');
 const circleItems = document.querySelectorAll('.circle-item');
 
-// Hide all questions initially
 questions.forEach((question, i) => {
     if (i === 0) {
-        question.style.display = 'block';  // Show first question
+        question.style.display = 'block';  
     } else {
-        question.style.display = 'none';  // Hide other questions
+        question.style.display = 'none'; 
     }
 });
 
-// Show the current question and hide others
+
 function showQuestion(index) {
     questions.forEach((question, i) => {
         if (i === index) {
-            question.style.display = 'block';  // Show current question
-            circleItems[i].classList.add('active');  // Highlight current question number
+            question.style.display = 'block'; 
+            circleItems[i].classList.add('active'); 
         } else {
-            question.style.display = 'none';  // Hide other questions
-            circleItems[i].classList.remove('active');  // Remove highlight from other question numbers
+            question.style.display = 'none';  
+            circleItems[i].classList.remove('active');  
         }
     });
 }
 
-// Event listeners for Prev and Next buttons
+
 document.getElementById('nextBtn').addEventListener('click', () => {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -217,32 +213,31 @@ document.getElementById('prevBtn').addEventListener('click', () => {
     }
 });
 
-// Pagination: Click on circle items to jump to the respective question
+
 circleItems.forEach((item, index) => {
     item.addEventListener('click', () => {
         currentQuestion = index;
         showQuestion(currentQuestion);
     });
 });
-let timerDuration = 120; // 2 minutes 30 seconds in seconds
+let timerDuration = 120; 
 let timerDisplay = document.getElementById('timer');
 const popupModal = document.getElementById('popupModal');
 const closeButton = document.getElementById('closeButton');
 const resetButton = document.getElementById('resetButton');
 
-// Function to reset the quiz
+
 function resetQuiz() {
-    timerDuration = 120; // Reset to 2 minutes 30 seconds
-    currentQuestion = 0; // Reset to the first question
-    showQuestion(currentQuestion); // Show the first question
-    timerDisplay.textContent = "00:02:30 Minutes"; // Reset timer display
-    popupModal.style.display = "none"; // Hide the popup
-    // Reset selected answers if needed (implement this according to your needs)
+    timerDuration = 120; 
+    currentQuestion = 0; 
+    showQuestion(currentQuestion); 
+    timerDisplay.textContent = "00:02:00 Minutes"; 
+    popupModal.style.display = "none"; 
+
     const options = document.querySelectorAll('.option input[type="radio"]');
-    options.forEach(option => option.checked = false); // Uncheck all radio buttons
+    options.forEach(option => option.checked = false);
 }
 
-// Timer countdown logic
 const countdown = setInterval(() => {
     let minutes = Math.floor(timerDuration / 60);
     let seconds = timerDuration % 60;
@@ -252,27 +247,27 @@ const countdown = setInterval(() => {
 
     if (timerDuration <= 0) {
         clearInterval(countdown);
-        popupModal.style.display = "block"; // Show the popup when time is up
+        popupModal.style.display = "block"; 
     }
 
     timerDuration--;
 }, 1000);
 
-// Close button functionality
+
 closeButton.addEventListener('click', () => {
-    popupModal.style.display = "none"; // Hide the popup
+    popupModal.style.display = "none"; 
 });
 
-// Reset button functionality
+
 resetButton.addEventListener('click', resetQuiz);
 
-// Close modal when clicking outside of the modal
+
 window.onclick = function(event) {
     if (event.target == popupModal) {
         popupModal.style.display = "none";
     }
 };
-// Initialize by showing the first question
+
 showQuestion(currentQuestion);
     </script>
 

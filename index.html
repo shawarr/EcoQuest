@@ -19,22 +19,22 @@
             <a class="title" href="index.html">
                 <h1 class="ecoquest-title">EcoQuest</h1>
             </a>
-            <p style="font-size:25px; color:white">Collect. Learn. Sustain</p>
+            <p style="font-size:25px; color:darkred">Collect. Learn. Sustain</p>
         </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding:0.75em;">
-        <!-- Logo Section -->
+      
         <a class="navbar-brand" href="#">
             <img src="images/logo3.png" alt="Logo" style="height: 70px; width:auto;">
         </a>
 
-        <!-- Toggler Button for Small Screens -->
+       
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar Links (Collapsible) -->
+      
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
@@ -127,6 +127,9 @@
                 <div class="text-overlay">Affordable Energy<br>Harnessing Renewables</div>
             </div>
         </div>
+        </div>
+        <div class="container-fluid submit-container">
+            <a href="QuizSDG14.html"><button class="submit-btn">Scan QR</button></a>
         </div>
         <hr>
         <h2 class="get-informed">SDGs - Start Learning!</h2>
@@ -230,11 +233,11 @@
         </div>
     </footer>
 
-    <!-- Load jQuery first -->
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Slick Carousel -->
+   
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
@@ -290,17 +293,18 @@ $(document).ready(function () {
 });
 $(document).ready(function(){
     $('.slick-carousel3').slick({
-      slidesToShow: 5,  // Show 2 images at once
-      slidesToScroll: 1,  // Scroll 1 image at a time
-      autoplay: true,  // Autoplay the carousel
-      autoplaySpeed: 400,  // Autoplay every 2 seconds
-      arrows: true,  // Show navigation arrows
-      infinite: true,  // Infinite loop
+      slidesToShow: 5, 
+      slidesToScroll: 5,  
+      autoplay: true, 
+      autoplaySpeed: 2000,  
+      arrows: true,  
+      infinite: true,  
       responsive: [
         {
-          breakpoint: 768,  // For screens smaller than 768px
+          breakpoint: 768, 
           settings: {
-            slidesToShow: 3  // Show only 1 image at a time on small screens
+            slidesToShow: 3,  
+            slidesToScroll:3
           }
         }
       ]
