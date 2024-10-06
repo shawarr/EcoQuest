@@ -1,103 +1,12 @@
-   
-    
-    .wrapper {
-        background-image: url('images/background.jpg');
-        background-size: cover; /* Ensure the background image covers the entire area */
-        background-position: center; /* Center the background image */
-        position: relative; /* Positioning context for pseudo-elements */
-    }
+.navbar{
+    background-color:#1b91bd !important;
+  
+}
+.navbar-brand{
+    margin-left:0.5em;
+    margin-right:em;
+}
 
+.nav-item{
 
-    .logo {
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-
-    .dropdown-item {
-        color: white;
-    }
-
-    .nav-link {
-        color: white !important;
-    }
-
-    .title {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-    }
-
-    @media screen and (min-width: 1096px) {
-        .ecoquest-title {
-            font-size: 75px;
-        }
-    }
-
-    .ecoquest-title {
-        color: white;
-
-    }
-
-    .landing-text {
-        margin: 2em 1em; /* Responsive margins */
-    }
-
-    .landing-header {
-        text-decoration: underline;
-    }
-
-    .landing-page-text {
-        margin: 1em;
-    }
-
-    .landing-paragraph {
-        margin: 1.5em;
-    }
-
-    .play-now {
-        background-color: blue;
-        border-radius: 3px;
-        border-style: none;
-        color: white;
-        padding: 0.15em 1em;
-    }
-
-    .footer-container {
-        position: relative; /* Change from fixed to relative for better responsiveness */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    #landing-carousel {
-        position: relative;
-        width: 100%; /* Ensure it takes full width */
-    }
-
-    #landing-carousel .slick-slide {
-        display: flex; /* Flexbox to align slides properly */
-        justify-content: center; /* Center slide content */
-    }
-
-    #landing-carousel .slick-slide img {
-        width: 100%; /* Make images responsive */
-        max-width: 400px; /* Limit maximum size */
-        height: auto; /* Maintain aspect ratio */
-        border-style: solid;
-    }
-
-    .button-container {
-        margin-bottom: 5em;
-    }
-
-    .sdg-container{
-        margin-top:3em;
-        margin-left:5em;
-    }
-
-   
-   
-   
-   
+}
